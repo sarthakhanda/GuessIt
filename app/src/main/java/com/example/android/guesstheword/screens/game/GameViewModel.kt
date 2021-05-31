@@ -90,27 +90,27 @@ class GameViewModel: ViewModel() {
 
     private fun resetList() {
         wordList = mutableListOf(
-                "queen",
-                "hospital",
-                "basketball",
-                "cat",
-                "change",
-                "snail",
-                "soup",
-                "calendar",
-                "sad",
-                "desk",
-                "guitar",
-                "home",
-                "railway",
-                "zebra",
-                "jelly",
-                "car",
-                "crow",
-                "trade",
-                "bag",
-                "roll",
-                "bubble"
+                "Ferrari",
+                "Cricket",
+                "Basketball",
+                "Golden Retriever",
+                "Currency",
+                "Lion",
+                "Chicken",
+                "Calendar",
+                "iPhone",
+                "Couch",
+                "Guitar",
+                "Villa",
+                "Airlines",
+                "Zebra",
+                "Jelly",
+                "Pagani",
+                "Dollar",
+                "Stocks",
+                "Tacos",
+                "Burger",
+                "Canada"
         )
         wordList.shuffle()
     }
