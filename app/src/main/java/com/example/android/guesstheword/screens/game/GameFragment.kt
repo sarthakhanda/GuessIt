@@ -23,7 +23,7 @@ class GameFragment : Fragment() {
     private lateinit var binding: GameFragmentBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
 
         // Inflate view and obtain an instance of the binding class
         binding = DataBindingUtil.inflate(
@@ -35,7 +35,7 @@ class GameFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
         binding.gameViewModel = viewModel
-        binding.setLifecycleOwner(this)
+        binding.lifecycleOwner = this
 
         viewModel.gameFinished.observe(viewLifecycleOwner, Observer {
             hasEnded -> if(hasEnded) {
